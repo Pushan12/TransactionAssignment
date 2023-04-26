@@ -8,12 +8,8 @@ namespace TransactionAssignment.Helper
     }
 
     public class FileProcesserFactory : IFileProcesserFactory
-    {        
-        public FileProcesserFactory()
-        {
-            
-        }
-
+    {
+        
         public IFileProcesser GetProcessor(IFormFile file)
         {
             switch(Path.GetExtension(file.FileName))

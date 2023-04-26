@@ -5,12 +5,8 @@ using TransactionAssignment.Models;
 namespace TransactionAssignment.Helper
 {
     public class XmlFileProcessor : IFileProcesser
-    {        
-        public XmlFileProcessor()
-        {
-            
-        }
-
+    {
+        
         public (bool isSuccess, List<TransactionModel> transactions, string err) ReadData(IFormFile file)
         {
             try

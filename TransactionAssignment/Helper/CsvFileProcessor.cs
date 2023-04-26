@@ -5,12 +5,7 @@ using TransactionAssignment.Models;
 namespace TransactionAssignment.Helper
 {
     public class CsvFileProcessor : IFileProcesser
-    {        
-        public CsvFileProcessor()
-        {
-            
-        }
-
+    {
         public (bool isSuccess, List<TransactionModel> transactions, string err) ReadData(IFormFile file)
         {
             try
