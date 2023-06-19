@@ -7,12 +7,12 @@ namespace TransactionAssignment.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class LazySingletonController : ControllerBase
+    public class SingletonController : ControllerBase
     {
-        readonly ILazySingletonTxnService _txnService;
+        readonly ISingletonTxnService _txnService;
         readonly IFileProcesserFactory _fileProcesserFactory;
 
-        public LazySingletonController(ILazySingletonTxnService txnService, IFileProcesserFactory fileProcesserFactory)
+        public SingletonController(ISingletonTxnService txnService, IFileProcesserFactory fileProcesserFactory)
         {
             _txnService = txnService;
             _fileProcesserFactory = fileProcesserFactory;

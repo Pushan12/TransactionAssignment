@@ -15,8 +15,10 @@ namespace TransactionAssignment
             builder.Services.AddDbContext<TxnDbContext>(opt => opt.UseInMemoryDatabase("Transaction"),ServiceLifetime.Scoped);
             builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             builder.Services.AddScoped(typeof(ISingletonRepo<>), typeof(SingletonRepo<>));
+            builder.Services.AddScoped(typeof(ILazySingletonRepo<>), typeof(LazySingletonRepo<>));
             builder.Services.AddScoped<ITxnService, TxnService>();
-            builder.Services.AddScoped<ISTxnService, STxnService>();
+            builder.Services.AddScoped<ISingletonTxnService, SingletonTxnService>();
+            builder.Services.AddScoped<ILazySingletonTxnService, LazySingletonTxnService>();
             builder.Services.AddScoped<IFileProcesserFactory,FileProcesserFactory>();
 
             builder.Services.AddControllers();
