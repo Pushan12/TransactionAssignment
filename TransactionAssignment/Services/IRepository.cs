@@ -11,6 +11,33 @@ namespace TransactionAssignment.Services
         Task<int> InsertAsync(T entity);
     }
 
+    public class LazySingletonRepo<T> : IRepository<T> where T : class
+    {
+        protected readonly TxnDbContext _txnDbContext;
+        DbSet<T> entities;
+        public LazySingletonRepo()
+        {
+            _txnDbContext = LazySingletonDBManager.Instance;
+            entities = _txnDbContext.Set<T>();
+        }
+
+        public async Task<IList<T>> GetAllAsync(Expression<Func<T, bool>> where)
+        {
+            return await entities.Where(where).ToListAsync();
+        }
+
+        public async Task<int> InsertAsync(T entity)
+        {
+            await entities.AddAsync(entity);
+            return await _txnDbContext.SaveChangesAsync();
+        }
+
+        public async Task<bool> IsExist(Expression<Func<T, bool>> where)
+        {
+            return await entities.Where(where).AnyAsync();
+        }
+    }
+
     public class Repository<T> : IRepository<T> where T: class
     {
         protected readonly TxnDbContext _txnDbContext;
