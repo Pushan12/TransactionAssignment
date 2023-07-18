@@ -18,7 +18,7 @@ namespace TransactionAssignment.AdapterPattern
 
         public string ConvertXmlToJson()
         {
-            string jsonText = JsonConvert.SerializeXmlNode(_xmlConverter.GetTransactionsXml().ToXmlDocument());
+            string jsonText = JsonConvert.SerializeXNode(_xmlConverter.GetTransactionsXml());
             var ss = JsonConvert.DeserializeObject<dynamic>(jsonText);
             return JsonConvert.SerializeObject(ss.Transactions.Transaction);
         }
