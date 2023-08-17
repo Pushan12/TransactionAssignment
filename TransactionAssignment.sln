@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TransactionAssignment", "TransactionAssignment\TransactionAssignment.csproj", "{6472D216-3522-418D-A4D3-5D5A7E51BA3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeDesignPattern", "BridgeDesignPattern\BridgeDesignPattern.csproj", "{84813C98-617C-4EB8-958F-2BBBB2264BD7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6472D216-3522-418D-A4D3-5D5A7E51BA3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6472D216-3522-418D-A4D3-5D5A7E51BA3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6472D216-3522-418D-A4D3-5D5A7E51BA3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84813C98-617C-4EB8-958F-2BBBB2264BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84813C98-617C-4EB8-958F-2BBBB2264BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84813C98-617C-4EB8-958F-2BBBB2264BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84813C98-617C-4EB8-958F-2BBBB2264BD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
