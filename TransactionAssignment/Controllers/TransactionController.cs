@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Xml;
+using TransactionAssignment.AdapterPattern;
 using TransactionAssignment.Data;
 using TransactionAssignment.Helper;
 using TransactionAssignment.Services;
@@ -67,6 +69,18 @@ namespace TransactionAssignment.Controllers
                     status = x.Status
                 };
             }).ToList());
+        }
+
+        [HttpGet("TpaResultJson")]
+        public IActionResult TpaResultJson()
+        {
+            return Ok(new ThirdPartyApi().GetTransactionsJson());
+        }        
+
+        [HttpGet("NewTpaResult")]
+        public IActionResult NewTpaResult()
+        {
+            return Ok(new XmlToJsonAdapter(new ThirdPartyApi()).ConvertXmlToJson());
         }
     }
 }
