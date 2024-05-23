@@ -1,0 +1,5 @@
+/.vscode/*.*
+/.swagger-codegen/*.*
+/.vs/*.*
+/.swagger-codegen/*
+obj

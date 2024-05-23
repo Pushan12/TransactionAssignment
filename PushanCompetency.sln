@@ -13,9 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPattern", "Decorat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AwsSecretManager", "AwsSecretManager\AwsSecretManager.csproj", "{A93A7734-770B-4D77-90E6-B767FF636B92}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventDrivenMicroservices.Common", "EventDrivenMicroservices.Common\EventDrivenMicroservices.Common.csproj", "{3B960410-4F9D-4135-99C7-27B4E94A1ACB}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventDrivenMicroservices", "EventDrivenMicroservices\EventDrivenMicroservices.csproj", "{D1BE743F-20C6-47F8-B2F7-2B8F9D5019FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IO.Swagger", "swagger-petstore\IO.Swagger\IO.Swagger.csproj", "{A8F3E028-A8BC-45FF-B821-9F5CD189103E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +41,10 @@ Global
 		{A93A7734-770B-4D77-90E6-B767FF636B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A93A7734-770B-4D77-90E6-B767FF636B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A93A7734-770B-4D77-90E6-B767FF636B92}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B960410-4F9D-4135-99C7-27B4E94A1ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B960410-4F9D-4135-99C7-27B4E94A1ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B960410-4F9D-4135-99C7-27B4E94A1ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B960410-4F9D-4135-99C7-27B4E94A1ACB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1BE743F-20C6-47F8-B2F7-2B8F9D5019FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1BE743F-20C6-47F8-B2F7-2B8F9D5019FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1BE743F-20C6-47F8-B2F7-2B8F9D5019FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1BE743F-20C6-47F8-B2F7-2B8F9D5019FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8F3E028-A8BC-45FF-B821-9F5CD189103E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8F3E028-A8BC-45FF-B821-9F5CD189103E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8F3E028-A8BC-45FF-B821-9F5CD189103E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8F3E028-A8BC-45FF-B821-9F5CD189103E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
